@@ -7,9 +7,6 @@ body
 	if !!backColor2 && backColor != backColor2 && backColor2!='backColor2'
 		background-color backColor2
 
-.container
-	position	relative
-
 body.preload
 
 	.pages
@@ -27,16 +24,16 @@ body.preload
 .pages
 	left		0
 	right		0
-	width		auto
+	width		950px
 	min-height	650px
 	border		1px solid #302F2F
-	margin		100px 0 10px 0
+	margin		20px auto 80px auto
 	text-align	center
 	border-radius 5px
-	transition	all 500ms
+	transition border 500ms
 
 	&:first-child
-		margin		10px 0 10px 0
+		//margin		10px 0 10px 0
 
 	&.active
 		border		1px solid gray
@@ -44,8 +41,13 @@ body.preload
 	.loadingtext
 		display		none
 
+	h1
+		opacity 0
+
 	.p1
 		.tx1
 			position	relative
 
 
+.redhl
+	color	#E68686
