@@ -10,28 +10,37 @@ body
 .container
 	position	relative
 
+body.preload
+
+	.pages
+		visibility	hidden
+
+		&:first-child
+			visibility	visible
+
+		.loadingtext
+			display		block
+
+		.intotext
+			display		none
+
 .pages
 	left		0
 	right		0
 	width		auto
-	height		650px
+	min-height	650px
 	border		1px solid #302F2F
 	margin		100px 0 10px 0
 	text-align	center
 	border-radius 5px
-	transition	all 1s
+	transition	all 500ms
 
-.pages:first-child
-	margin		10px 0 10px 0
+	&:first-child
+		margin		10px 0 10px 0
 
-.pages.active
-	border		1px solid gray
+	&.active
+		border		1px solid gray
 
-.loadingtext
-	display		none
+	.loadingtext
+		display		none
 
-body.preload .loadingtext
-	display		block
-
-body.preload .intotext
-	display		none
