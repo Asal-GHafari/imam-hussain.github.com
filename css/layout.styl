@@ -7,14 +7,25 @@ body
 	if !!backColor2 && backColor != backColor2 && backColor2!='backColor2'
 		background-color backColor2
 
-.pages
+.container
 	position	relative
+
+.pages
+	left		0
+	right		0
 	width		auto
 	height		650px
-	border		1px solid gray
-	margin		10px 0 100px 0
+	border		1px solid #302F2F
+	margin		100px 0 10px 0
 	text-align	center
 	border-radius 5px
+	transition	all 1s
+
+.pages:first-child
+	margin		10px 0 10px 0
+
+.pages.active
+	border		1px solid gray
 
 .loadingtext
 	display		none
