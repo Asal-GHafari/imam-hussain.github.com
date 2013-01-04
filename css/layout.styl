@@ -43,6 +43,75 @@ body.preload
 		display		none
 
 
-
 .redhl
-	color	#E68686
+	color	rgb(230, 134, 134)
+
+.greenhl
+	color	rgb(134, 230, 134)
+
+.bookimg
+	position	fixed
+	left		0
+	right		0
+	top			0
+	bottom		0
+	width		1000px
+	margin		0 auto
+	z-index		-10
+
+	figure
+		position	absolute
+		left		0
+		top 		0
+		bottom 		0
+		margin		auto
+		width		400px
+		height		300px
+		overflow	hidden
+		border 		1px solid gray
+
+#panimg
+	width		1788px
+	height		1301px
+	position 	absolute
+	left		0
+	top 		0
+	transition transform 500ms
+
+	.book_page_title
+		position	absolute
+		left		400px
+		top			40px
+
+	.book_target_section
+		position	absolute
+		left		930px
+		top			750px
+
+	&.zoom_all
+		transform translate(-694px,-500px) scale(.22)
+		transition-duration 1s
+
+	&.zoom_amir_almomenin
+		transform translate(-938px,-725px) scale(0.67)
+
+	&.zoom_shobhe
+		transform translate(-933px,-670px) scale(0.66)
+
+	&.zoom_pasokh
+		transform translate(-917px,-661px) scale(0.62)
+
+	&.zoom_omar_lanati_kn_1
+		transform translate(-1000px,-900px) scale(1.65)
+
+	&.zoom_omar_lanati_kn_2
+		transform translate(-1815px,-1040px) scale(2)
+
+	&.zoom_bayan
+		transform translate(-2120px,-1090px) scale(2.4)
+
+	
+
+
+
+
