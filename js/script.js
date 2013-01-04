@@ -18,13 +18,13 @@
 		duration:200
 	})
 
-	var dly = 450
+	var dly = 300
 
 	scrollorama.animate('.p2 .tx1',{
 		property:'margin-top',
 		start:0,
 		end:380,
-		duration:400,
+		duration:500,
 		delay: dly
 	})
 
@@ -48,13 +48,13 @@
 	})
 
 
-	dly = 500
+	dly = 300
 
 	scrollorama.animate('.p3 .tx1',{
 		property:'margin-top',
-		start:100,
-		end:380,
-		duration:400,
+		start:0,
+		end:300,
+		duration:500,
 		delay: dly
 	})
 
