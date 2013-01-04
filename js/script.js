@@ -106,7 +106,7 @@
 			duration:150,
 			delay:dly
 		})
-		dly += 150
+		dly += 100
 	})
 
 	scrollorama.animate('.p4 .group',{
@@ -125,6 +125,35 @@
 		end:1,
 		duration:150,
 		delay:600
+	})
+
+	dly = 200
+
+	scrollorama.animate('.p5 .tx1',{
+		property:'margin-top',
+		start:0,
+		end:300,
+		duration:500,
+		delay: dly
+	})
+
+	$('.p5 h1, .p5 h2, .p5 h3').each(function(){
+		scrollorama.animate($(this),{
+			property:'opacity',
+			start:0,
+			end:1,
+			duration:150,
+			delay:dly
+		})
+		dly += 100
+	})
+
+	scrollorama.animate('.p5 .group',{
+		property:'opacity',
+		start:1,
+		end:0,
+		duration:250,
+		delay:dly+50
 	})
 
 
