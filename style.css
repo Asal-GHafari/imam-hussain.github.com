@@ -580,9 +580,20 @@ body.preload .pages .loadingtext{display:block}
 body.preload .pages .intotext{display:none}
 .pages{left:0;right:0;width:950px;min-height:650px;margin:20px auto;text-align:center;-webkit-border-radius:5px;border-radius:5px;padding-top:1px;}
 .pages .loadingtext{display:none}
-.pages h1{opacity:0;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:alpha(opacity=0)}
-.pages .p1 .tx1{position:relative}
 .redhl{color:#e68686}
+.greenhl{color:#86e686}
+.bookimg{position:fixed;left:0;right:0;top:0;bottom:0;width:1000px;margin:0 auto;z-index:-10;display:none;}
+.bookimg figure{position:absolute;left:0;top:0;bottom:0;margin:auto;width:400px;height:300px;overflow:hidden;border:1px solid #808080}
+#panimg{width:1788px;height:1301px;position:absolute;left:0;top:0;-webkit-transition:-webkit-transform 500ms;-moz-transition:-moz-transform 500ms;-o-transition:-o-transform 500ms;-ms-transition:-ms-transform 500ms;transition:transform 500ms;}
+#panimg .book_page_title{position:absolute;left:400px;top:40px}
+#panimg .book_target_section{position:absolute;left:930px;top:750px}
+#panimg.zoom_all{-webkit-transform:translate(-694px,-500px) scale(.22);-moz-transform:translate(-694px,-500px) scale(.22);-o-transform:translate(-694px,-500px) scale(.22);-ms-transform:translate(-694px,-500px) scale(.22);transform:translate(-694px,-500px) scale(.22);-webkit-transition-duration:700ms;-moz-transition-duration:700ms;-o-transition-duration:700ms;-ms-transition-duration:700ms;transition-duration:700ms}
+#panimg.zoom_amir_almomenin{-webkit-transform:translate(-938px,-725px) scale(.67);-moz-transform:translate(-938px,-725px) scale(.67);-o-transform:translate(-938px,-725px) scale(.67);-ms-transform:translate(-938px,-725px) scale(.67);transform:translate(-938px,-725px) scale(.67)}
+#panimg.zoom_shobhe{-webkit-transform:translate(-933px,-670px) scale(.66);-moz-transform:translate(-933px,-670px) scale(.66);-o-transform:translate(-933px,-670px) scale(.66);-ms-transform:translate(-933px,-670px) scale(.66);transform:translate(-933px,-670px) scale(.66)}
+#panimg.zoom_pasokh{-webkit-transform:translate(-917px,-661px) scale(.62);-moz-transform:translate(-917px,-661px) scale(.62);-o-transform:translate(-917px,-661px) scale(.62);-ms-transform:translate(-917px,-661px) scale(.62);transform:translate(-917px,-661px) scale(.62)}
+#panimg.zoom_omar_lanati_kn_1{-webkit-transform:translate(-1000px,-900px) scale(1.65);-moz-transform:translate(-1000px,-900px) scale(1.65);-o-transform:translate(-1000px,-900px) scale(1.65);-ms-transform:translate(-1000px,-900px) scale(1.65);transform:translate(-1000px,-900px) scale(1.65)}
+#panimg.zoom_omar_lanati_kn_2{-webkit-transform:translate(-1815px,-1040px) scale(2);-moz-transform:translate(-1815px,-1040px) scale(2);-o-transform:translate(-1815px,-1040px) scale(2);-ms-transform:translate(-1815px,-1040px) scale(2);transform:translate(-1815px,-1040px) scale(2)}
+#panimg.zoom_bayan{-webkit-transform:translate(-2120px,-1090px) scale(2.4);-moz-transform:translate(-2120px,-1090px) scale(2.4);-o-transform:translate(-2120px,-1090px) scale(2.4);-ms-transform:translate(-2120px,-1090px) scale(2.4);transform:translate(-2120px,-1090px) scale(2.4)}
 }@media print{*{background:transparent !important;color:#000 !important;-webkit-box-shadow:none !important;box-shadow:none !important;text-shadow:none !important}
 .noprint{display:none !important}
 a,a:visited{text-decoration:underline}
