@@ -1,5 +1,7 @@
 ;(function($,undefined){
-	var scrollorama = $.scrollorama({ blocks:'.pages' })
+	var pages = $('.pages'),
+		bookimg = $('.bookimg'),
+		scrollorama = $.scrollorama({ blocks:pages })
 
 	$(window).bind('load',function(){setTimeout(function(){
 			window.scrollTo(0,0)
@@ -8,7 +10,8 @@
 
 	scrollorama.onBlockChange(function() {
 		var i = scrollorama.blockIndex
-		$('.pages').removeClass('active').eq(i).addClass('active')
+		pages.removeClass('active').eq(i).addClass('active')
+		bookimg.css('display', i<3 || i>10?'none':'block')
 	});
 
 	scrollorama.animate('.p1 .tx1',{
@@ -76,16 +79,9 @@
 		duration:250,
 		delay:dly+50
 	})
-	
-	/*
 
-	.animate('.p2 .tx2',{
-		property:'margin-top',
-		start:10,
-		end:40,
-		duration:150,
-		delay:300
-	},{
+
+	scrollorama.animate(bookimg,{
 		property:'opacity',
 		start:0,
 		end:1,
@@ -93,18 +89,7 @@
 		delay:300
 	})
 
-	.animate('.p2 .tx1',{
-		property:'margin-top',
-		start:200,
-		end:210,
-		duration:200,
-		delay:450
-	})
 
-*/
-
-	
-	
 
 
 })(jQuery)
