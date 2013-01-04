@@ -48,7 +48,7 @@
 	})
 
 
-	dly = 550
+	dly = 500
 
 	scrollorama.animate('.p3 .tx1',{
 		property:'margin-top',
